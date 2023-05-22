@@ -1,0 +1,27 @@
+Axx = Narrow
+Bxx = Regular
+Cxx = Wide
+
+xAx = stunt
+xBx = Urban
+xCx = Fitness
+
+xxA = $0-200
+xxB = $200-350
+xxC = $350+
+
+per fit type Axx, Bxx and Cxx. need 3 stunt, 3Urban and 3 Fitness
+
+
+Start page click opens model to take name and closes on submit
+
+survery starts, User answers 3 questions answers are logged A,B,C per question.
+
+when on last question user asked to submit
+
+on submit take users logged answers string ABC and show user coresponding suggestion with the Id of that string
+
+suggestion in a model
+
+stretch goals. allow user to click to search google maps for closest skate store
+
