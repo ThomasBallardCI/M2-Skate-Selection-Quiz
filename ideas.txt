@@ -25,3 +25,7 @@ suggestion in a model
 
 stretch goals. allow user to click to search google maps for closest skate store
 
+
+
+backdrop filter - https://caniuse.com/css-backdrop-filter
+
