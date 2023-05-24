@@ -64,3 +64,6 @@ h1{
   -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
 }
 
+.answer-btn:active {
+  transform: scale(1.0)
+}
