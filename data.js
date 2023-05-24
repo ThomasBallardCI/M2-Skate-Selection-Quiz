@@ -45,7 +45,7 @@ const answerBtnC = document.getElementById('c');
 const question = document.getElementById('question');
 
 //Array of Questions with Answer Id's to log
-let questions = [
+const questions = [
   {
     question: "How would you describe the width of your feet?",
     answers: [
@@ -90,5 +90,7 @@ function loadQuestion(questionIndex){
   answerBtnB.innerHTML = questions[questionIndex].answers[1].text;
   answerBtnC.innerHTML = questions[questionIndex].answers[2].text;
 };
+
+
 
 beginQuiz();
