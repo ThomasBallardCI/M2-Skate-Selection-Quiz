@@ -80,12 +80,13 @@ function loadQuestion(questionIndex){
 };
 
 //Function for onClick event of buttons to interate through questions on click and log answer button id pressed
-if (currentQuestion < questions.length) {
+function nextQuestion(){
+  if (currentQuestion < questions.length) {
   loadQuestion(currentQuestion + 1);
 }
 else {
 
-};
+}};
 
 //Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
