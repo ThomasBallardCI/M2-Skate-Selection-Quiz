@@ -39,36 +39,24 @@ const skateSuggest = {
 };
 
 
-const answerBtnA = document.getElementById('a');
-const answerBtnB = document.getElementById('b');
-const answerBtnC = document.getElementById('c');
+const answerBtnA = document.getElementById('A');
+const answerBtnB = document.getElementById('B');
+const answerBtnC = document.getElementById('C');
 const question = document.getElementById('question');
 
 //Array of Questions with Answer Id's to log
 const questions = [
   {
     question: "How would you describe the width of your feet?",
-    answers: [
-      {id: 'a', text: "Narrow"},
-      {id: 'b', text: "Regular"},
-      {id: 'c', text: "Wide"},
-    ]
+    answers: ["Narrow", "Regular", "Wide"]
   },
   {
     question: "What is your primary focus or preferred style of inline skating?",
-    answers: [
-      {id: 'a', text: "Stunt"},
-      {id: 'b', text: "Urban"},
-      {id: 'c', text: "Fitness"},
-    ]
+    answers: [ "Stunt", "Urban", "Fitness"]
   },
   {
-  question: "What price range do you typically prefer or find most suitable for your needs?",
-    answers: [
-      {id: 'a', text: "Upto £200"},
-      {id: 'b', text: "£200-£350"},
-      {id: 'c', text: "Over £350"},
-    ]
+    question: "What price range do you typically prefer or find most suitable for your needs?",
+    answers: ["Upto £200", "£200-£350", "Over £350"]
   },
 ];
 
@@ -76,7 +64,7 @@ const questions = [
 let currentQuestion = 0;
 
 // Variable to hold selected answers
-let selectedResults = [];
+let selectedResults = "";
 
 //function to being questionaire
 function beginQuiz(){
@@ -86,11 +74,20 @@ function beginQuiz(){
 //Function to load Question
 function loadQuestion(questionIndex){
   question.innerHTML = questions[questionIndex].question;
-  answerBtnA.innerHTML = questions[questionIndex].answers[0].text;
-  answerBtnB.innerHTML = questions[questionIndex].answers[1].text;
-  answerBtnC.innerHTML = questions[questionIndex].answers[2].text;
+  answerBtnA.innerHTML = questions[questionIndex].answers[0];
+  answerBtnB.innerHTML = questions[questionIndex].answers[1];
+  answerBtnC.innerHTML = questions[questionIndex].answers[2];
 };
 
+//Function for onClick event of buttons to interate through questions on click and log answer button id pressed
+if (currentQuestion < questions.length) {
+  loadQuestion(currentQuestion + 1);
+}
+else {
+
+};
+
+//Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
 
 beginQuiz();
