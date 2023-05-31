@@ -84,15 +84,17 @@ function loadQuestion(questionIndex){
 };
 
 //Function for onClick event of buttons to interate through questions on click and log answer button id pressed
-function nextQuestion(){
+function nextQuestion(event){
   if (currentQuestion < questions.length) {
-  loadQuestion(currentQuestion+1);
+  loadQuestion(currentQuestion++);
+  console.log(currentQuestion);
 }};
 
-answerBtnA.addEventListener('mouseup', nextQuestion);
+answerBtnA.addEventListener('click', nextQuestion);
 
 //Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
 
 beginQuiz();
+console.log(currentQuestion);
 logResponse();
