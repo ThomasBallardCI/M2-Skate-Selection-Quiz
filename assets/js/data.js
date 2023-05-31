@@ -86,7 +86,7 @@ function loadQuestion(questionIndex){
 //Function for onClick event of buttons to interate through questions on click and log answer button id pressed
 function nextQuestion(event){
   if (currentQuestion < questions.length) {
-  loadQuestion(currentQuestion++);
+  loadQuestion(++currentQuestion);
   console.log(currentQuestion);
 }};
 
