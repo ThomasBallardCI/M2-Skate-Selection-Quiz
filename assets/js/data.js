@@ -1,43 +1,50 @@
-// OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION
-const skateSuggest = {
+// FUNCTION WITH OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
+function logResponse() {
+const skateSuggest = [
   // Narrow Stunt Skate options
-  AAA: {name: "narrow-stunt-upto-200", info: "placeholder", image: "placeholder"},
-  AAB: {name: "narrow-stunt-upto-350", info: "placeholder", image: "placeholder"},
-  AAC: {name: "narrow-stunt-350+", info: "placeholder", image: "placeholder"},
+  {id: "AAA", option: {name: "narrow-stunt-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "AAB", option: {name: "narrow-stunt-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "AAC", option: {name: "narrow-stunt-350+", info: "placeholder", image: "placeholder"}},
   // Narrow Urban skate options
-  ABA: {name: "narrow-urban-upto-250", info: "placeholder", image: "placeholder"},
-  ABB: {name: "narrow-urban-upto-350", info: "placeholder", image: "placeholder"},
-  ABC: {name: "narrow-urban-350+", info: "placeholder", image: "placeholder"},
+  {id: "ABA", option: {name: "narrow-urban-upto-250", info: "placeholder", image: "placeholder"}},
+  {id: "ABB", option: {name: "narrow-urban-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "ABC", option: {name: "narrow-urban-350+", info: "placeholder", image: "placeholder"}},
   // Narrow fitness skate options
-  ACA: {name: "narrow-fitness-upto-200", info: "placeholder", image: "placeholder"},
-  ACB: {name: "narrow-fitness-upto-350", info: "placeholder", image: "placeholder"},
-  ACC: {name: "narrow-fitness-350+", info: "placeholder",image: "placeholder"},
+  {id: "ACA", option: {name: "narrow-fitness-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "ACB", option: {name: "narrow-fitness-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "ACC", option: {name: "narrow-fitness-350+", info: "placeholder",image: "placeholder"}},
   // Regular stunt skate options
-  BAA: {name: "Regular-stunt-upto-200", info: "placeholder", image: "placeholder"},
-  BAB: {name: "Regular-stunt-upto-350", info: "placeholder", image: "placeholder"},
-  BAC: {name: "Regular-stunt-350+", info: "placeholder", image: "placeholder"},
+  {id: "BAA", option: {name: "Regular-stunt-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "BAB", option: {name: "Regular-stunt-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "BAC", option: {name: "Regular-stunt-350+", info: "placeholder", image: "placeholder"}},
   // Regular Urban skate options
-  BBA: {name: "Regular-urban-upto-200", info: "placeholder", image: "placeholder"},
-  BBB: {name: "Regular-urban-upto-350", info: "placeholder", image: "placeholder"},
-  BBC: {name: "Regular-urban-350+", info: "placeholder", image: "placeholder"},
+  {id: "BBA", option: {name: "Regular-urban-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "BBB", option: {name: "Regular-urban-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "BBC", option: {name: "Regular-urban-350+", info: "placeholder", image: "placeholder"}},
   // Regular fitness skate options
-  BCA: {name: "Regular-fitness-upto-200", info: "placeholder", image: "placeholder"},
-  BCB: {name: "Regular-fitness-upto-350", info: "placeholder", image: "placeholder"},
-  BCC: {name: "Regular-fitness-350+", info: "placeholder", image: "placeholder"},
+  {id: "BCA", option: {name: "Regular-fitness-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "BCB", option: {name: "Regular-fitness-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "BCC", option: {name: "Regular-fitness-350+", info: "placeholder", image: "placeholder"}},
   // Wide stunt skate options
-  CAA: {name: "wide-stunt-upto-200", info: "placeholder", image: "placeholder"},
-  CAB: {name: "wide-stunt-upto-350", info: "placeholder", image: "placeholder"},
-  CAC: {name: "wide-stunt-350+", info: "placeholder", image: "placeholder"},
+  {id: "CAA", option: {name: "wide-stunt-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "CAB", option: {name: "wide-stunt-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "CAC", option: {name: "wide-stunt-350+", info: "placeholder", image: "placeholder"}},
   // Wide Urban skate options
-  CBA: {name: "wide-urban-upto-200", info: "placeholder", image: "placeholder"},
-  CBB: {name: "wide-urban-upto-350", info: "placeholder", image: "placeholder"},
-  CBC: {name: "wide-urban-350+", info: "placeholder", image: "placeholder"},
+  {id: "CBA", option: {name: "wide-urban-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "CBB", option: {name: "wide-urban-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "CBC", option: {name: "wide-urban-350+", info: "placeholder", image: "placeholder"}},
   // Wide fitness skate options
-  CCA: {name: "wide-fitness-upto-200", info: "placeholder", image: "placeholder"},
-  CCB: {name: "wide-fitness-upto-350", info: "placeholder", image: "placeholder"},
-  CCC: {name: "wide-fitness-350+", info: "placeholder", image: "placeholder"},
+  {id: "CCA", option: {name: "wide-fitness-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "CCB", option: {name: "wide-fitness-upto-350", info: "placeholder", image: "placeholder"}},
+  {id: "CCC", option: {name: "wide-fitness-350+", info: "placeholder", image: "placeholder"}},
+];
+// Variable to hold selected answers
+let selectedResults = "AAB";
+// Reference item from array based on user selected results
+let result = skateSuggest.find(item => item.id === selectedResults);
+console.log(result.option);
+console.log('done');
 };
-
 
 const answerBtnA = document.getElementById('A');
 const answerBtnB = document.getElementById('B');
@@ -63,9 +70,6 @@ const questions = [
 // Variable to track current question
 let currentQuestion = 0;
 
-// Variable to hold selected answers
-let selectedResults = "";
-
 //function to being questionaire
 function beginQuiz(){
   loadQuestion(currentQuestion);
@@ -82,13 +86,13 @@ function loadQuestion(questionIndex){
 //Function for onClick event of buttons to interate through questions on click and log answer button id pressed
 function nextQuestion(){
   if (currentQuestion < questions.length) {
-  loadQuestion(currentQuestion + 1);
-}
-else {
-
+  loadQuestion(currentQuestion+1);
 }};
+
+answerBtnA.addEventListener('mouseup', nextQuestion);
 
 //Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
 
 beginQuiz();
+logResponse();
