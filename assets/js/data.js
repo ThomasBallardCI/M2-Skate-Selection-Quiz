@@ -1,5 +1,4 @@
-// FUNCTION WITH OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
-function logResponse() {
+// OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
 const skateSuggest = [
   // Narrow Stunt Skate options
   {id: "AAA", option: {name: "narrow-stunt-upto-200", info: "placeholder", image: "placeholder"}},
@@ -38,9 +37,12 @@ const skateSuggest = [
   {id: "CCB", option: {name: "wide-fitness-upto-350", info: "placeholder", image: "placeholder"}},
   {id: "CCC", option: {name: "wide-fitness-350+", info: "placeholder", image: "placeholder"}},
 ];
+
 // Variable to hold selected answers
-let selectedResults = "AAB";
+let selectedResults = "";
+
 // Reference item from array based on user selected results
+function logResponse() {
 let result = skateSuggest.find(item => item.id === selectedResults);
 console.log(result.option);
 console.log('done');
@@ -50,6 +52,10 @@ const answerBtnA = document.getElementById('A');
 const answerBtnB = document.getElementById('B');
 const answerBtnC = document.getElementById('C');
 const question = document.getElementById('question');
+
+answerBtnA.addEventListener('click', nextQuestion);
+answerBtnB.addEventListener('click', nextQuestion);
+answerBtnC.addEventListener('click', nextQuestion);
 
 //Array of Questions with Answer Id's to log
 const questions = [
@@ -87,14 +93,15 @@ function loadQuestion(questionIndex){
 function nextQuestion(event){
   if (currentQuestion < questions.length) {
   loadQuestion(++currentQuestion);
-  console.log(currentQuestion);
-}};
+  let buttonId = String(this.id);
+  selectedResults += buttonId + "";
+  console.log(selectedResults);
+  } else {
 
-answerBtnA.addEventListener('click', nextQuestion);
+  }
+};
 
 //Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
 
 beginQuiz();
-console.log(currentQuestion);
-logResponse();
