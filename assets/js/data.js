@@ -41,11 +41,10 @@ const skateSuggest = [
 // Variable to hold selected answers
 let selectedResults = "";
 
-// Reference item from array based on user selected results
-function logResponse() {
-
-console.log('done');
-};
+// // Reference item from array based on user selected results
+// function logResponse() {
+// console.log('done');
+// };
 
 const answerBtnA = document.getElementById('A');
 const answerBtnB = document.getElementById('B');
@@ -90,18 +89,19 @@ function loadQuestion(questionIndex){
 
 //Function for onClick event of buttons to interate through questions on click and log answer button id pressed
 function nextQuestion(event){
-  if (currentQuestion < questions.length - 1) {
-  loadQuestion(++currentQuestion);
-  } else {
-    // mentor advised to access array of results based on user button click input string
-    let result = skateSuggest.find(item => item.id === selectedResults);
-    console.log(result);
-    console.log("no more questions")
-  };
-  let buttonId = String(this.id);
-  selectedResults += buttonId + "";
-  console.log(selectedResults);
-  
+  if(selectedResults.length < 3){
+    let buttonId = String(event.target.id);
+    selectedResults += buttonId + "";
+    console.log(selectedResults);
+      if (currentQuestion < questions.length - 1) {
+      loadQuestion(++currentQuestion);
+      } else {
+        // mentor advised to access array of results based on user button click input string
+        let result = skateSuggest.find(item => item.id === selectedResults);
+        console.log(result.option);
+        console.log("no more questions")
+      };
+    }
 };
 
 //Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable

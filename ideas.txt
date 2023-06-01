@@ -30,3 +30,8 @@ stretch goals. allow user to click to search google maps for closest skate store
 backdrop filter - https://caniuse.com/css-backdrop-filter
 
 mouse down effect buttons - https://www.geeksforgeeks.org/what-is-mouse-down-selector-in-css/
+
+event id target - https://javascript.plainenglish.io/how-to-get-the-id-of-the-clicked-element-in-the-javascript-click-handler-8ca398d848d6
+
+nextQuestion function - Help from tutor support
+
