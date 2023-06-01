@@ -91,14 +91,14 @@ function loadQuestion(questionIndex){
 
 //Function for onClick event of buttons to interate through questions on click and log answer button id pressed
 function nextQuestion(event){
-  if (currentQuestion < questions.length) {
+  if (currentQuestion < questions.length - 1) {
   loadQuestion(++currentQuestion);
+  } else {
+    console.log("no more questions")
+  };
   let buttonId = String(this.id);
   selectedResults += buttonId + "";
   console.log(selectedResults);
-  } else {
-
-  }
 };
 
 //Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
