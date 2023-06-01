@@ -1,3 +1,14 @@
+const modal = document.getElementById('nameEmailModal')
+const modalButtons = document.getElementsByClassName('btn')
+const answerBtnA = document.getElementById('A');
+const answerBtnB = document.getElementById('B');
+const answerBtnC = document.getElementById('C');
+const question = document.getElementById('question');
+
+answerBtnA.addEventListener('click', nextQuestion);
+answerBtnB.addEventListener('click', nextQuestion);
+answerBtnC.addEventListener('click', nextQuestion);
+
 // OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
 const skateSuggest = [
   // Narrow Stunt Skate options
@@ -40,20 +51,6 @@ const skateSuggest = [
 
 // Variable to hold selected answers
 let selectedResults = "";
-
-// // Reference item from array based on user selected results
-// function logResponse() {
-// console.log('done');
-// };
-
-const answerBtnA = document.getElementById('A');
-const answerBtnB = document.getElementById('B');
-const answerBtnC = document.getElementById('C');
-const question = document.getElementById('question');
-
-answerBtnA.addEventListener('click', nextQuestion);
-answerBtnB.addEventListener('click', nextQuestion);
-answerBtnC.addEventListener('click', nextQuestion);
 
 //Array of Questions with Answer Id's to log
 const questions = [
@@ -104,7 +101,7 @@ function nextQuestion(event){
     }
 };
 
-//Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
+//Function to show modal with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
 
 beginQuiz();
