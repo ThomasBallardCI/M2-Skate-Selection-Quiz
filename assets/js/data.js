@@ -84,11 +84,11 @@ function loadQuestion(questionIndex){
   answerBtnC.innerHTML = questions[questionIndex].answers[2];
 };
 
-//Function for onClick event of buttons to interate through questions on click and log answer button id pressed
+//Function for onClick event of buttons to iterate through questions on click and log answer button id pressed
 function nextQuestion(event){
   if(selectedResults.length < 3){
     let buttonId = String(event.target.id);
-    selectedResults += buttonId + "";
+    selectedResults += buttonId.toString();
     console.log(selectedResults);
       if (currentQuestion < questions.length - 1) {
       loadQuestion(++currentQuestion);
