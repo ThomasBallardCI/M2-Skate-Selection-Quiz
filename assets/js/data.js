@@ -43,8 +43,7 @@ let selectedResults = "";
 
 // Reference item from array based on user selected results
 function logResponse() {
-let result = skateSuggest.find(item => item.id === selectedResults);
-console.log(result.option);
+
 console.log('done');
 };
 
@@ -94,11 +93,15 @@ function nextQuestion(event){
   if (currentQuestion < questions.length - 1) {
   loadQuestion(++currentQuestion);
   } else {
+    // mentor advised to access array of results based on user button click input string
+    let result = skateSuggest.find(item => item.id === selectedResults);
+    console.log(result);
     console.log("no more questions")
   };
   let buttonId = String(this.id);
   selectedResults += buttonId + "";
   console.log(selectedResults);
+  
 };
 
 //Function to show model with skate recommendation using the logged answers string to correspond to info in skate suggest variable
