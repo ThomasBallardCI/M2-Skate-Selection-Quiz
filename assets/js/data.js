@@ -5,6 +5,9 @@ const answerBtnB = document.getElementById('B');
 const answerBtnC = document.getElementById('C');
 const question = document.getElementById('question');
 
+document.getElementById("quiz").style.display = "flex";
+document.getElementById("results").style.display = "none";
+
 answerBtnA.addEventListener('click', nextQuestion);
 answerBtnB.addEventListener('click', nextQuestion);
 answerBtnC.addEventListener('click', nextQuestion);
@@ -102,8 +105,5 @@ function nextQuestion(event){
 };
 
 //Function to show modal with skate recommendation using the logged answers string to correspond to info in skate suggest variable
-function myModal{
-  
-}
 
 beginQuiz();
