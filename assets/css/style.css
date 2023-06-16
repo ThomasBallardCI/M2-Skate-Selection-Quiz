@@ -48,7 +48,7 @@ h1, h2 {
 #quiz, #results {
   display: flex;
   flex-direction: column;
-  border: #ffffff solid 1px;
+  /* border: #ffffff solid 1px; */
   max-width: 616px;
   height: 450px;
   justify-content: center;
@@ -82,15 +82,17 @@ h1, h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: red 1px solid;
+  /* border: red 1px solid; */
   width: 200px;
   height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 #skateInfo {
   display: flex;
   font-size: 1.25em;
-  border: green 1px solid;
+  /* border: green 1px solid; */
   height: 200px;
   width: 375px;
   overflow: hidden;

@@ -4,8 +4,8 @@ const answerBtnB = document.getElementById('B');
 const answerBtnC = document.getElementById('C');
 const question = document.getElementById('question');
 
-document.getElementById("quiz").style.display = "none";
-document.getElementById("results").style.display = "flex";
+document.getElementById("quiz").style.display = "flex";
+document.getElementById("results").style.display = "none";
 
 answerBtnA.addEventListener('click', nextQuestion);
 answerBtnB.addEventListener('click', nextQuestion);
