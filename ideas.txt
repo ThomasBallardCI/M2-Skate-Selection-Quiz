@@ -35,3 +35,4 @@ event id target - https://javascript.plainenglish.io/how-to-get-the-id-of-the-cl
 
 nextQuestion function - Help from tutor support
 
+flexbox - https://www.w3schools.com/css/css3_flexbox.asp + https://stackoverflow.com/questions/20626685/how-do-i-set-distance-between-flexbox-items
