@@ -1,4 +1,3 @@
-const modal = document.getElementById('nameEmailModal')
 const modalButtons = document.getElementsByClassName('btn')
 const answerBtnA = document.getElementById('A');
 const answerBtnB = document.getElementById('B');
@@ -98,6 +97,8 @@ function nextQuestion(event){
       } else {
         // mentor advised to access array of results based on user button click input string
         let result = skateSuggest.find(item => item.id === selectedResults);
+        document.getElementById("quiz").style.display = "none";
+        document.getElementById("results").style.display = "flex";
         console.log(result.option);
         console.log("no more questions")
       };
