@@ -39,3 +39,7 @@ flexbox - https://www.w3schools.com/css/css3_flexbox.asp + https://stackoverflow
 
 
 273 - characters max skate info 
+
+Roces M12 info taken from - https://www.locoskates.com/collections/aggressive-skates/products/roces-m12-ufs-black-skates
+
+Razors Shima 3 info taken from - https://www.locoskates.com/collections/aggressive-skates/products/razors-shima-3-skates-white-remastered#

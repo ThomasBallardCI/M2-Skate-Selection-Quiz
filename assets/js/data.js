@@ -17,9 +17,9 @@ answerBtnC.addEventListener('click', nextQuestion);
 // OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
 const skateSuggest = [
   // Narrow Stunt Skate options
-  {id: "AAA", option: {name: "The Roces M12", info: "The Roces M12 is a classic, industry-standard skate that stands the test of time. The boot is supportive and dependable. Built for heavy impacts, they stand up against the gravest street tests from some of the most talented skaters globally.", image: "url('assets/images/RocesM12.jpg')"}},
-  {id: "AAB", option: {name: "narrow-stunt-upto-350", info: "placeholder", image: "placeholder"}},
-  {id: "AAC", option: {name: "narrow-stunt-350+", info: "placeholder", image: "placeholder"}},
+  {id: "AAA", option: {name: "Roces M12 UFS Black", info: "The Roces M12 is a classic, industry-standard skate that stands the test of time. The boot is supportive and dependable. Built for heavy impacts, they stand up against the gravest street tests from some of the most talented skaters globally.", image: "url('assets/images/rocesm12.jpg')"}},
+  {id: "AAB", option: {name: "USD Sway Sagona Pro", info: "The USD Sway with it's unique injection moulding makes the boot impact ready offering great resilience and shock absorption. The Sway offers generous forward flexion with it's ergonomical shape and tapered back for a balance between soul space and bulk.", image: "url('assets/images/usdsway.jpg')"}},
+  {id: "AAC", option: {name: "Razors Shima 3 White", info: "The Razors Shima 3 skates provide the ultimate package of performance, power and style. Built with OG Brian Shima's legendary touch, these skates feature a solid boot with a soft top quick lace system for maximum comfort and unparalleled performance", image: "url('assets/images/shima3.jpg')"}},
   // Narrow Urban skate options
   {id: "ABA", option: {name: "narrow-urban-upto-250", info: "placeholder", image: "placeholder"}},
   {id: "ABB", option: {name: "narrow-urban-upto-350", info: "placeholder", image: "placeholder"}},
