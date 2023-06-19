@@ -27,7 +27,7 @@ body{
 
 h1, h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   font-size: 38px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: medium;
@@ -74,8 +74,8 @@ h1, h2 {
 #skateContent {
   display: flex;
   flex-wrap: nowrap;
-  margin: 1em;
   gap: 1em;
+  margin-bottom: 3.125em;
 }
 
 #skateImage {
@@ -91,7 +91,7 @@ h1, h2 {
 
 #skateInfo {
   display: flex;
-  font-size: 1.25em;
+  font-size: 1.3em;
   /* border: green 1px solid; */
   height: 200px;
   width: 375px;

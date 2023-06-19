@@ -3,6 +3,9 @@ const answerBtnA = document.getElementById('A');
 const answerBtnB = document.getElementById('B');
 const answerBtnC = document.getElementById('C');
 const question = document.getElementById('question');
+const skateTitle = document.getElementById('skateTitle');
+const skateInfo = document.getElementById('skateInfo');
+const skateImage = document.getElementById('skateImage')
 
 document.getElementById("quiz").style.display = "flex";
 document.getElementById("results").style.display = "none";
@@ -14,7 +17,7 @@ answerBtnC.addEventListener('click', nextQuestion);
 // OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
 const skateSuggest = [
   // Narrow Stunt Skate options
-  {id: "AAA", option: {name: "narrow-stunt-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "AAA", option: {name: "The Roces M12", info: "The Roces M12 is a classic, industry-standard skate that stands the test of time. The boot is supportive and dependable. Built for heavy impacts, they stand up against the gravest street tests from some of the most talented skaters globally.", image: "url('assets/images/RocesM12.jpg')"}},
   {id: "AAB", option: {name: "narrow-stunt-upto-350", info: "placeholder", image: "placeholder"}},
   {id: "AAC", option: {name: "narrow-stunt-350+", info: "placeholder", image: "placeholder"}},
   // Narrow Urban skate options
@@ -86,6 +89,16 @@ function loadQuestion(questionIndex){
   answerBtnC.innerHTML = questions[questionIndex].answers[2];
 };
 
+// Function to call information from skatesuggest based on user answers and populate HTML on results panel
+function skateResult(selectedResults) {
+  // Mentor Advised code to find the correct skate in list based on user selection
+  let result = skateSuggest.find(item => item.id === selectedResults);
+  // Populates Results panel HTML with relevent information from skateSuggest variable
+  skateTitle.innerHTML = result.option.name;
+  skateInfo.innerHTML = result.option.info;
+  skateImage.style.backgroundImage = result.option.image;
+};
+
 //Function for onClick event of buttons to iterate through questions on click and log answer button id pressed
 function nextQuestion(event){
   if(selectedResults.length < 3){
@@ -95,15 +108,16 @@ function nextQuestion(event){
       if (currentQuestion < questions.length - 1) {
       loadQuestion(++currentQuestion);
       } else {
-        // mentor advised to access array of results based on user button click input string
-        let result = skateSuggest.find(item => item.id === selectedResults);
+        // Hides  Questions panel and shows Results panel
         document.getElementById("quiz").style.display = "none";
         document.getElementById("results").style.display = "flex";
-        console.log(result.option);
-        console.log("no more questions")
+        // Calls function to populate results panel HTML with desired skate information from skateSuggest variable
+        skateResult(selectedResults);
+        console.log("no more questions");
       };
     }
 };
+
 
 //Function to show modal with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
