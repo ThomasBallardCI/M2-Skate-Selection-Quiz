@@ -5,7 +5,8 @@ const answerBtnC = document.getElementById('C');
 const question = document.getElementById('question');
 const skateTitle = document.getElementById('skateTitle');
 const skateInfo = document.getElementById('skateInfo');
-const skateImage = document.getElementById('skateImage')
+const skateImage = document.getElementById('skateImage');
+const restartBtn = document.getElementById('restart');
 
 document.getElementById("quiz").style.display = "flex";
 document.getElementById("results").style.display = "none";
@@ -13,6 +14,8 @@ document.getElementById("results").style.display = "none";
 answerBtnA.addEventListener('click', nextQuestion);
 answerBtnB.addEventListener('click', nextQuestion);
 answerBtnC.addEventListener('click', nextQuestion);
+restartBtn.addEventListener('click', restartQuiz);
+
 
 // OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
 const skateSuggest = [
@@ -99,7 +102,7 @@ function skateResult(selectedResults) {
   skateImage.style.backgroundImage = result.option.image;
 };
 
-//Function for onClick event of buttons to iterate through questions on click and log answer button id pressed
+//Function for onClick event of buttons to iterate through questions on click and log answer button cliked id 
 function nextQuestion(event){
   if(selectedResults.length < 3){
     let buttonId = String(event.target.id);
@@ -115,9 +118,17 @@ function nextQuestion(event){
         skateResult(selectedResults);
         console.log("no more questions");
       };
-    }
+    };
 };
 
+// Restart Button Function to clear selected results and begin quiz again
+function restartQuiz(event){
+  currentQuestion = 0;
+  selectedResults = "";
+  document.getElementById("results").style.display = "none";
+  document.getElementById("quiz").style.display = "flex";
+  beginQuiz(0);
+};
 
 //Function to show modal with skate recommendation using the logged answers string to correspond to info in skate suggest variable
 
