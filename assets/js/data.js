@@ -29,9 +29,9 @@ const skateSuggest = [
   {id: "ACB", option: {name: "narrow-fitness-upto-350", info: "placeholder", image: "placeholder"}},
   {id: "ACC", option: {name: "narrow-fitness-350+", info: "placeholder",image: "placeholder"}},
   // Regular stunt skate options
-  {id: "BAA", option: {name: "USD Aeon 60 Basic", info: "The USD Aeon 60 Basic Skates are a staple on the aggressive skate market. Groundbreaking and offering high performance whilst remaining affordable. The Aeon uses a unibody boot and frame giving it a solid feel and lower centre of gravity.", image: "url('assets/images/usdaeon60basic.jpg')"}},
-  {id: "BAB", option: {name: "Mesmer Throne", info: "The boot mould is taken from the USD Classic Throne. Necessary modernizations allow the Mesmer Throne to flourish, The one-piece sole kit is a brand-new design and fits the bottom of the reshaped boot like a glove.", image: "url('assets/images/mesmerthrone.jpg"}},
-  {id: "BAC", option: {name: "Them Skates 909", info: "One of the most highly regarded and loved aggressive skates on the market. The Them Skates 909 is the brainchild of legendary skater Jon Julio. The boot offers a solid and comfortable ride thanks to the use of Intuition liners.", image: "url('assets/images/themskates909.jpg"}},
+  {id: "BAA", option: {name: "Razors Cult", info: "The Razors Cult as its name suggests is a cult classic boot. A tried and true design since the early 2000s featuring a sleek classic boot styling and a super fast soleplate. A premium skate in a great low price range.", image: "url('assets/images/razorscultblack.jpg')"}},
+  {id: "BAB", option: {name: "Mesmer Throne", info: "The boot mould is taken from the USD Classic Throne. Necessary modernizations allow the Mesmer Throne to flourish, The one-piece sole kit is a brand-new design and fits the bottom of the reshaped boot like a glove.", image: "url('assets/images/mesmerthrone.jpg')"}},
+  {id: "BAC", option: {name: "Them Skates 909", info: "One of the most highly regarded and loved aggressive skates on the market. The Them Skates 909 is the brainchild of legendary skater Jon Julio. The boot offers a solid and comfortable ride thanks to the use of Intuition liners.", image: "url('assets/images/themskates909.jpg')"}},
   // Regular Urban skate options
   {id: "BBA", option: {name: "Regular-urban-upto-200", info: "placeholder", image: "placeholder"}},
   {id: "BBB", option: {name: "Regular-urban-upto-350", info: "placeholder", image: "placeholder"}},
@@ -41,9 +41,9 @@ const skateSuggest = [
   {id: "BCB", option: {name: "Regular-fitness-upto-350", info: "placeholder", image: "placeholder"}},
   {id: "BCC", option: {name: "Regular-fitness-350+", info: "placeholder", image: "placeholder"}},
   // Wide stunt skate options
-  {id: "CAA", option: {name: "wide-stunt-upto-200", info: "placeholder", image: "placeholder"}},
-  {id: "CAB", option: {name: "wide-stunt-upto-350", info: "placeholder", image: "placeholder"}},
-  {id: "CAC", option: {name: "wide-stunt-350+", info: "placeholder", image: "placeholder"}},
+  {id: "CAA", option: {name: "USD Aeon 60 Basic", info: "The USD Aeon 60 Basic Skates are a staple on the aggressive skate market. Groundbreaking and offering high performance whilst remaining affordable. The Aeon uses a unibody boot and frame giving it a solid feel and lower centre of gravity.", image: "url('assets/images/usdaeon60basic.jpg')"}},
+  {id: "CAB", option: {name: "Razors SL", info: "The SL is a concrete skate, with plenty of ankle support, shock absorption and a decent soul plate for grinding. Beginners will get on just as well as more experienced skaters. a category of skate that everyone will be familiar with and be able to pick up with ease.", image: "url('assets/images/razorsslgrey.jpg')"}},
+  {id: "CAC", option: {name: "Faction Tactical V1", info: "The Tactical V1 is a heat moldable carbon fibre boot with a nubuck leather upper. The strength and responsiveness of carbon with the style and comfort of a soft boot. Including a fully removable liner to get the best fit. Available boot only.", image: "url('assets/images/factionv1.jpg')"}},
   // Wide Urban skate options
   {id: "CBA", option: {name: "wide-urban-upto-200", info: "placeholder", image: "placeholder"}},
   {id: "CBB", option: {name: "wide-urban-upto-350", info: "placeholder", image: "placeholder"}},
