@@ -27,7 +27,7 @@ const skateSuggest = [
   {id: "AAB", option: {name: "USD Sway Sagona Pro", info: "The USD Sway with it's unique injection moulding makes the boot impact ready offering great resilience and shock absorption. The Sway offers generous forward flexion with it's ergonomical shape and tapered back for a balance between soul space and bulk.", image: "url('assets/images/usdsway.jpg')"}},
   {id: "AAC", option: {name: "Razors Shima 3 White", info: "The Razors Shima 3 skates provide the ultimate package of performance, power and style. Built with OG Brian Shima's legendary touch, these skates feature a solid boot with a soft top quick lace system for maximum comfort and unparalleled performance.", image: "url('assets/images/shima3.jpg')"}},
   // NARROW URBAN SKATE OPTIONS
-  {id: "ABA", option: {name: "narrow-urban-upto-250", info: "placeholder", image: "placeholder"}},
+  {id: "ABA", option: {name: "Powerslide Next 100", info: "The shell and cuff are composed of glass fibre-reinforced plastic, making the skate lightweight but supportive. The construction also provides adequate shock absorption so that users will suffer less stress on their feet, reducing muscle fatigue.", image: "url('assets/images/powerslidenext100.jpg')"}},
   {id: "ABB", option: {name: "narrow-urban-upto-350", info: "placeholder", image: "placeholder"}},
   {id: "ABC", option: {name: "narrow-urban-350+", info: "placeholder", image: "placeholder"}},
   // NARROW FITNESS SKATE OPTIONS
@@ -51,9 +51,9 @@ const skateSuggest = [
   {id: "CAB", option: {name: "Razors SL", info: "The SL is a concrete skate, with plenty of ankle support, shock absorption and a decent soul plate for grinding. Beginners will get on just as well as more experienced skaters. a category of skate that everyone will be familiar with and be able to pick up with ease.", image: "url('assets/images/razorsslgrey.jpg')"}},
   {id: "CAC", option: {name: "Faction Tactical V1", info: "The Tactical V1 is a heat moldable carbon fibre boot with a nubuck leather upper. The strength and responsiveness of carbon with the style and comfort of a soft boot. Including a fully removable liner to get the best fit. Available boot only.", image: "url('assets/images/factionv1.jpg')"}},
   // WIDE URBAN SKATE OPTIONS
-  {id: "CBA", option: {name: "wide-urban-upto-200", info: "placeholder", image: "placeholder"}},
-  {id: "CBB", option: {name: "wide-urban-upto-350", info: "placeholder", image: "placeholder"}},
-  {id: "CBC", option: {name: "wide-urban-350+", info: "placeholder", image: "placeholder"}},
+  {id: "CBA", option: {name: "Flying Eagle FBS+", info: "The Flying Eagle FBS+ boot is supportive accompanied by a comfortable liner, with ventilation holes keeping the foot cool. The construction will benefit users who want great energy transfer with fewer pressure points on the foot.", image: "url('assets/images/flyingeaglefbsplus.jpg')"}},
+  {id: "CBB", option: {name: "FR Skates FR1 80", info: "The FR1 80 has undergone testing from elite athletes to ensure both top performance and shock absorption. Responsive whilst reducing road vibrations for a smoother feel. The wide lace opening allows easy fitment, while the cuff provides great support.", image: "url('assets/images/frfr180.jpg')"}},
+  {id: "CBC", option: {name: "FR Skates FR1 80 Intuition", info: "The FR1 80 has undergone testing from elite athletes to ensure both top performance and shock absorption. Responsive whilst reducing road vibrations for a smoother feel, The inclusion of an industry-leading Intuition liner really sets these apart.", image: "url('assets/images/frfr180intuition.jpg')"}},
   // WIDE FITNESS SKATE OPTIONS
   {id: "CCA", option: {name: "wide-fitness-upto-200", info: "placeholder", image: "placeholder"}},
   {id: "CCB", option: {name: "wide-fitness-upto-350", info: "placeholder", image: "placeholder"}},
