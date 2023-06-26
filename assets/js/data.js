@@ -141,6 +141,4 @@ function restartQuiz(event){
   beginQuiz();
 };
 
-//Function to show modal with skate recommendation using the logged answers string to correspond to info in skate suggest variable
-
 beginQuiz();

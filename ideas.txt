@@ -43,3 +43,37 @@ flexbox - https://www.w3schools.com/css/css3_flexbox.asp + https://stackoverflow
 Roces M12 info taken from - https://www.locoskates.com/collections/aggressive-skates/products/roces-m12-ufs-black-skates
 
 Razors Shima 3 info taken from - https://www.locoskates.com/collections/aggressive-skates/products/razors-shima-3-skates-white-remastered#
+
+
+mentor suggestions
+Identifier for which question you're on
+Splash page
+Indication of what was picked
+restart on all plages or back 1 question button
+favicon of a skate
+
+25 character User name input
+
+email results to user
+
+done back to splash page
+
+
+
+change to script.js file name Maybe add skate data to a data.js file
+
+readme credit why capatalised comments in CODE
+
+manual testing spreadsheet
+
+user name capture on splash
+
+
+ODER OF IMPORTANCE
+readMe
+splash
+Progress
+responsiveness
+user name input and calling
+email last
+
