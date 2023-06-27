@@ -97,3 +97,14 @@ h1, h2 {
   width: 375px;
   overflow: hidden;
 }
+
+/* MOBILE STYLING
+@media only screen and (max-width: 615px) {
+  #quiz, #results {
+    max-width: 300px;
+    height: auto;
+  }
+  #skateContent {
+    flex-direction: column;
+  }
+} */
