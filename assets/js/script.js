@@ -63,17 +63,25 @@ const skateTitle = document.getElementById('skateTitle');
 const skateInfo = document.getElementById('skateInfo');
 const skateImage = document.getElementById('skateImage');
 const restartBtn = document.getElementById('restart');
+const submitBtn = document.getElementById('submitBtn');
 
 // DISPLAYS QUIZ AND HIDES RESULTS PANELS AS DEFAULT BEHAVIOUR
-document.getElementById("quiz").style.display = "flex";
+document.getElementById("quiz").style.display = "none";
 document.getElementById("results").style.display = "none";
+document.getElementById("welcome").style.display = "flex";
 
 // BUTTON EVENT LISTENERS
 answerBtnA.addEventListener('click', nextQuestion);
 answerBtnB.addEventListener('click', nextQuestion);
 answerBtnC.addEventListener('click', nextQuestion);
 restartBtn.addEventListener('click', restartQuiz);
+submitBtn.addEventListener('click', startQuiz);
 
+function startQuiz(event) {
+  beginQuiz();
+  document.getElementById("welcome").style.display = "none";
+  document.getElementById("quiz").style.display = "flex"
+};
 
 // VARIABLE TO HOLD USER SELECTED ANSWERS
 let selectedResults = "";
@@ -131,7 +139,8 @@ function restartQuiz(event){
   selectedResults = "";
   // HIDES THE RESULTS PANEL AND SHOWS THE QUIZ PANEL
   document.getElementById("results").style.display = "none";
-  document.getElementById("quiz").style.display = "flex";
+  document.getElementById("quiz").style.display = "none";
+  document.getElementById("welcome").style.display = "flex"
   // CLEARS THE RESULTS PANEL CONTENT
   skateTitle.innerHTML = "";
   skateInfo.innerHTML = "";
@@ -139,5 +148,3 @@ function restartQuiz(event){
   // CALLS BEGINQUIZ FUNCTION TO START THE QUESTIONAIRE AGAIN
   beginQuiz();
 };
-
-beginQuiz();
