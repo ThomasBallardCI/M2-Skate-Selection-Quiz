@@ -37,7 +37,9 @@ nextQuestion function - Help from tutor support
 
 flexbox - https://www.w3schools.com/css/css3_flexbox.asp + https://stackoverflow.com/questions/20626685/how-do-i-set-distance-between-flexbox-items
 
-placeholder color change for input field - https://stackoverflow.com/questions/13183421/how-to-change-placeholder-color-on-focus
+placeholder color change for input field - https://stackoverflow.com/questions/13183421/how-to-change-placeholder-color-on-focus + https://www.w3schools.com/howto/howto_css_placeholder.asp
+
+submit button - https://www.w3schools.com/tags/att_input_type_submit.asp
 
 text area for input field styling - https://www.w3schools.com/css/css_form.asp
 
