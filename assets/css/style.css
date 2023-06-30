@@ -159,7 +159,7 @@ h1, h2 {
 
 #skateInfo {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   height: 200px;
   width: 375px;
   overflow: hidden;
