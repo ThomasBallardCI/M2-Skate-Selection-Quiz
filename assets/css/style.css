@@ -61,7 +61,7 @@ input[type=text]:focus {
 }
 
 input[type=text]::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 input[type=text]:focus::placeholder {
@@ -75,6 +75,7 @@ input[type=text]:focus::placeholder {
   border-radius: 12px;
   font-size: 2em;
   margin-top: 10px;
+  font-weight: medium;
 }
 
 #submitBtn:hover {
