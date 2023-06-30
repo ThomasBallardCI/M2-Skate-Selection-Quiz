@@ -29,8 +29,9 @@ body{
 /* WELCOME PAGE STYLING */
 p {
   text-align: center;
-  font-size: 1.1em;
-  margin-bottom: 3.125em;
+  font-size: 1.3em;
+  margin-bottom: 1.5625em;
+  /* border: 1px solid red; */
 }
 
 /* USERS NAME INPUT FIELD STYLING */
@@ -39,9 +40,8 @@ input[type=text] {
   background-color: rgba(254, 253, 255, 0.2);
   height: 66px;
   width: 500px;
-  margin-bottom: 1.5625em;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 2em;
   outline: none;
   resize: none;
   cursor: pointer;
@@ -65,10 +65,11 @@ input[type=text]:focus::placeholder {
 
 /* START QUIZ BUTTON STYLING */
 #submitBtn {
-  height: 33px;
-  width: 250px;
-  border-radius: 6px;
-  font-size: 1.1em;
+  height: 66px;
+  width: 500px;
+  border-radius: 12px;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 #submitBtn:hover {
@@ -84,8 +85,8 @@ input[type=text]:focus::placeholder {
 /* TITLE STYLING */
 h1, h2 {
   text-align: center;
-  margin-bottom: 3.125rem;
-  font-size: 38px;
+  margin-bottom: 1.5625rem;
+  font-size: 2.375em;
   color: rgba(255, 255, 255, 0.9);
   font-weight: medium;
 }
@@ -99,7 +100,7 @@ h1, h2 {
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
   font-weight: medium;
-  font-size: 32px;
+  font-size: 2em;
   margin-top: 10px;
 }
 
@@ -136,11 +137,14 @@ h1, h2 {
   margin-bottom: 3.125em;
 }
 
+#skateTitle {
+  margin-bottom: 1.5625em;
+}
+
 #skateImage {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: red 1px solid; */
   width: 200px;
   height: 200px;
   border-radius: 12px;
@@ -150,7 +154,6 @@ h1, h2 {
 #skateInfo {
   display: flex;
   font-size: 1.3em;
-  /* border: green 1px solid; */
   height: 200px;
   width: 375px;
   overflow: hidden;
