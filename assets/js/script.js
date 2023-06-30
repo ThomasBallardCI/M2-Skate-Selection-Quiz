@@ -49,7 +49,7 @@ const questions = [
     answers: [ "Stunt", "Urban", "Fitness"]
   },
   {
-    question: "What price range do you typically prefer or find most suitable for your needs?",
+    question: "What price range do you typically find most suitable for your needs?",
     answers: ["Upto £200", "£200-£350", "Over £350"]
   },
 ];
