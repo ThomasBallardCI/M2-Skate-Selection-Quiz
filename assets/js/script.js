@@ -55,10 +55,11 @@ const questions = [
 ];
 
 // HTML ELEMENTS TO VARIABLES FOR MANIPULATION
-const modalButtons = document.getElementsByClassName('btn')
 const answerBtnA = document.getElementById('A');
 const answerBtnB = document.getElementById('B');
 const answerBtnC = document.getElementById('C');
+const submitBtn = document.getElementById('submitBtn');
+const userName = document.getElementById('userName');
 const question = document.getElementById('question');
 const skateTitle = document.getElementById('skateTitle');
 const skateInfo = document.getElementById('skateInfo');
@@ -66,6 +67,7 @@ const skateImage = document.getElementById('skateImage');
 const restartBtn = document.getElementById('restart');
 
 // DISPLAYS QUIZ AND HIDES RESULTS PANELS AS DEFAULT BEHAVIOUR
+document.getElementById("welcome").style.display = "flex";
 document.getElementById("quiz").style.display = "none";
 document.getElementById("results").style.display = "none";
 
@@ -83,6 +85,8 @@ let currentQuestion = 0;
 
 // FUNCTION TO BEGIN THE QUESTIONAIRE
 function beginQuiz(){
+  getElementById("welcome").style.display = "none";
+  getElementById("quiz").style.display = "flex";
   loadQuestion(currentQuestion);
 };
 
@@ -139,5 +143,3 @@ function restartQuiz(event){
   // CALLS BEGINQUIZ FUNCTION TO START THE QUESTIONAIRE AGAIN
   beginQuiz();
 };
-
-beginQuiz();
