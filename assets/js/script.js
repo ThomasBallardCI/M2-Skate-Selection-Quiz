@@ -77,6 +77,7 @@ answerBtnC.addEventListener('click', nextQuestion);
 restartBtn.addEventListener('click', restartQuiz);
 submitBtn.addEventListener('click', startQuiz);
 
+// START QUIZ FUNCTION FROM WELCOME PAGE
 function startQuiz(event) {
   beginQuiz();
   document.getElementById("welcome").style.display = "none";
