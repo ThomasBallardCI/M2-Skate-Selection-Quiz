@@ -29,7 +29,7 @@ body{
 /* WELCOME PAGE STYLING */
 p {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: 1.5625em;
   /* border: 1px solid red; */
 }
@@ -140,12 +140,12 @@ h1, h2 {
   display: flex;
   flex-wrap: nowrap;
   gap: 1em;
-  margin-bottom: 3.125em;
-}
-
-#skateTitle {
   margin-bottom: 1.5625em;
 }
+
+/* #skateTitle {
+  margin-bottom: 1.5625em;
+} */
 
 #skateImage {
   display: flex;
@@ -159,7 +159,7 @@ h1, h2 {
 
 #skateInfo {
   display: flex;
-  font-size: 1.3em;
+  font-size: 1.2rem;
   height: 200px;
   width: 375px;
   overflow: hidden;
