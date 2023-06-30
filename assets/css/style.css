@@ -7,12 +7,13 @@
 }
 
 body{
-  font-family: 'Manrope';
+  font-family: 'Manrope', sans-serif;
   background: url('../images/background.jpg') no-repeat center fixed;
   background-size: cover;
   color: #ffffff;
 }
 
+/* MAIN BACKGROUND STYLING */
 .container {
   display: flex;
   position: fixed;
@@ -25,6 +26,62 @@ body{
   -webkit-backdrop-filter: blur(50px);
 }
 
+/* WELCOME PAGE STYLING */
+p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 3.125em;
+}
+
+/* USERS NAME INPUT FIELD STYLING */
+input[type=text] {
+  border-radius: 12px;
+  background-color: rgba(254, 253, 255, 0.2);
+  height: 66px;
+  width: 500px;
+  margin-bottom: 1.5625em;
+  text-align: center;
+  font-size: 1.1em;
+  outline: none;
+  resize: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+input[type=text]:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+}
+
+input[type=text]::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+input[type=text]:focus::placeholder {
+  color: rgba(133,126,120,255);
+}
+
+/* START QUIZ BUTTON STYLING */
+input[type=submit] {
+  height: 33px;
+  width: 250px;
+  border-radius: 6px;
+  font-size: 1.1em;
+}
+
+input[type=submit]:hover {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+}
+
+input[type=submit]:active {
+  transform: scale(1.0)
+}
+
+/* TITLE STYLING */
 h1, h2 {
   text-align: center;
   margin-bottom: 3.125rem;
@@ -33,6 +90,7 @@ h1, h2 {
   font-weight: medium;
 }
 
+/* QUIZ BUTTONS STYLING */
 .answer-btn, .restart-btn {
   background-color: rgba(254, 253, 255, 0.2);
   width: 500px;
@@ -43,17 +101,6 @@ h1, h2 {
   font-weight: medium;
   font-size: 32px;
   margin-top: 10px;
-}
-
-#quiz, #results {
-  display: flex;
-  flex-direction: column;
-  /* border: #ffffff solid 1px; */
-  max-width: 616px;
-  height: 450px;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 .answer-btn:hover, .restart-btn:hover {
@@ -69,8 +116,19 @@ h1, h2 {
   transform: scale(1.0)
 }
 
+/* QUIZ, RESULTS AND WELCOME AREA STYLING */
+#quiz, #results, #welcome {
+  display: flex;
+  flex-direction: column;
+  /* border: #ffffff solid 1px; */
+  max-width: 616px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
-/* Results styling */
+/* RESULTS PANEL STYLING */
 #skateContent {
   display: flex;
   flex-wrap: nowrap;
