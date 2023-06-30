@@ -78,7 +78,7 @@ restartBtn.addEventListener('click', restartQuiz);
 submitBtn.addEventListener('click', startQuiz);
 
 // START QUIZ FUNCTION FROM WELCOME PAGE
-function startQuiz(event) {
+function startQuiz() {
   beginQuiz();
   document.getElementById("welcome").style.display = "none";
   document.getElementById("quiz").style.display = "flex"
@@ -134,7 +134,7 @@ function nextQuestion(event){
 };
 
 // RESTART BUTTON FUNCTION
-function restartQuiz(event){
+function restartQuiz(){
   // RESETS QUESTION AND RESULTS VARIABLES
   currentQuestion = 0;
   selectedResults = "";
