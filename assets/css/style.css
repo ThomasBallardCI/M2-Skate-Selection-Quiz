@@ -34,12 +34,6 @@ p {
   /* border: 1px solid red; */
 }
 
-/* USERS NAME INPUT FIELD STYLING */
-#nameForm {
-  display: flex;
-  flex-direction: column;
-}
-
 input[type=text] {
   border-radius: 12px;
   background-color: rgba(254, 253, 255, 0.2);
