@@ -63,7 +63,7 @@ input[type=text]:focus::placeholder {
 }
 
 /* START QUIZ BUTTON STYLING */
-#submitBtn {
+#submit {
   height: 66px;
   width: 500px;
   border-radius: 12px;
@@ -72,13 +72,13 @@ input[type=text]:focus::placeholder {
   font-weight: medium;
 }
 
-#submitBtn:hover {
+#submit:hover {
   transform: scale(1.06);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
   -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
 }
 
-#submitBtn:active {
+#submit:active {
   transform: scale(1.0)
 }
 

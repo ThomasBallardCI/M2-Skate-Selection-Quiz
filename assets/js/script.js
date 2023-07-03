@@ -76,6 +76,22 @@ answerBtnB.addEventListener('click', nextQuestion);
 answerBtnC.addEventListener('click', nextQuestion);
 restartBtn.addEventListener('click', restartQuiz);
 submitBtn.addEventListener('click', checkUser);
+document.getElementById("submitBtn").addEventListener("click", checkUser());
+
+function checkUser() {
+  let regexp = /^[0-9a-zA-z]+$/;
+  let username = document.getElementById("user").ariaValueMax;
+
+  if (user.match(regexp)) {
+    beginQuiz();
+    document.getElementById("user").innertext = user;
+    document.getElementById("Welcome").style.display = "none";
+    document.getElementById("quiz").style.display = "flex";
+    console.log(userName);
+  } else {
+
+  };
+};
 
 // START QUIZ FUNCTION FROM WELCOME PAGE
 // function startQuiz() {
@@ -150,17 +166,3 @@ function restartQuiz(){
   beginQuiz();
 };
 
-function checkUser() {
-  let regexp = /^[0-9a-zA-z]+$/;
-  let userName = document.getElementById("userName").ariaValueMax.trim();
-
-  if (userName.match(regexp)) {
-    beginQuiz();
-    document.getElementById("userName").innertext = userName;
-    document.getElementById("Welcome").style.display = "none";
-    document.getElementById("quiz").style.display = "flex";
-    console.log(userName);
-  } else {
-
-  };
-};
