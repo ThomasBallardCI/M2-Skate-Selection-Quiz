@@ -44,7 +44,8 @@ input[type=text] {
   outline: none;
   resize: none;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.9)
+  color: rgba(255, 255, 255, 0.9);
+  /* text-transform: capitalize; */
 }
 
 input[type=text]:focus {
@@ -153,7 +154,7 @@ h1, h2 {
 
 #skateInfo {
   display: flex;
-  font-size: 1.2em;
+  font-size: 1.1em;
   height: 200px;
   width: 375px;
   overflow: hidden;
