@@ -65,11 +65,15 @@ const skateImage = document.getElementById('skateImage');
 const restartBtn = document.getElementById('restart');
 const submit = document.getElementById('submit');
 const nameInput = document.getElementById('username');
+const welcomePanel = document.getElementById('welcome');
+const resultsPanel = document.getElementById('results');
+const quizPanel = document.getElementById('quiz');
 
 // DISPLAYS QUIZ AND HIDES RESULTS PANELS AS DEFAULT BEHAVIOUR
-document.getElementById("quiz").style.display = "none";
-document.getElementById("results").style.display = "none";
-document.getElementById("welcome").style.display = "flex";
+welcomePanel.style.display = "flex";
+quizPanel.style.display = "none";
+resultsPanel.style.display = "none";
+
 
 // BUTTON EVENT LISTENERS
 answerBtnA.addEventListener('click', nextQuestion);
@@ -78,15 +82,16 @@ answerBtnC.addEventListener('click', nextQuestion);
 restartBtn.addEventListener('click', restartQuiz);
 submit.addEventListener('click', checkUser);
 
+// CHECKS USER NAME INPUT IS ALPHANUMERICAL STORES USERNAME AND LOADS QUIZ, IF NO USERNAME IS INPUT ALERTS USER TO ENTER ONE
 function checkUser() {
   let regexp = /^[0-9a-zA-z]+$/;
-  let username = document.getElementById("username").value.trim();
+  let username = nameInput.value.trim();
 
   if (username.match(regexp)) {
-    document.getElementById("username").innertext = username;
+    nameInput.innertext = username;
     beginQuiz();
-    document.getElementById("welcome").style.display = "none";
-    document.getElementById("quiz").style.display = "flex";
+    welcomePanel.style.display = "none";
+    quizPanel.style.display = "flex";
     console.log(username);
   } else {
     alert("Please enter a name to continue!")
@@ -134,8 +139,8 @@ function nextQuestion(event){
       loadQuestion(++currentQuestion);
       } else {
         // HIDES QUESTIONS PANEL AND SHOWS RESULTS PANEL
-        document.getElementById("quiz").style.display = "none";
-        document.getElementById("results").style.display = "flex";
+        quizPanel.style.display = "none";
+        resultsPanel.style.display = "flex";
         // CALLS FUNCTION TO POPULATE RESULTS PANEL HTML WITH DESIRED SKATE INFORMATION FROM SKATE SUGGEST VARIABLE
         skateResult(selectedResults);
       };
