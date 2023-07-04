@@ -63,7 +63,8 @@ const skateTitle = document.getElementById('skateTitle');
 const skateInfo = document.getElementById('skateInfo');
 const skateImage = document.getElementById('skateImage');
 const restartBtn = document.getElementById('restart');
-const submitBtn = document.getElementById('submitBtn');
+const submit = document.getElementById('submit');
+const nameInput = document.getElementById('username');
 
 // DISPLAYS QUIZ AND HIDES RESULTS PANELS AS DEFAULT BEHAVIOUR
 document.getElementById("quiz").style.display = "none";
@@ -75,30 +76,22 @@ answerBtnA.addEventListener('click', nextQuestion);
 answerBtnB.addEventListener('click', nextQuestion);
 answerBtnC.addEventListener('click', nextQuestion);
 restartBtn.addEventListener('click', restartQuiz);
-submitBtn.addEventListener('click', checkUser);
-document.getElementById("submitBtn").addEventListener("click", checkUser());
+submit.addEventListener('click', checkUser);
 
 function checkUser() {
   let regexp = /^[0-9a-zA-z]+$/;
-  let username = document.getElementById("user").ariaValueMax;
+  let username = document.getElementById("username").value.trim();
 
-  if (user.match(regexp)) {
+  if (username.match(regexp)) {
+    document.getElementById("username").innertext = username;
     beginQuiz();
-    document.getElementById("user").innertext = user;
-    document.getElementById("Welcome").style.display = "none";
+    document.getElementById("welcome").style.display = "none";
     document.getElementById("quiz").style.display = "flex";
-    console.log(userName);
+    console.log(username);
   } else {
-
+    alert("Please enter a name to continue!")
   };
 };
-
-// START QUIZ FUNCTION FROM WELCOME PAGE
-// function startQuiz() {
-//   beginQuiz();
-//   document.getElementById("welcome").style.display = "none";
-//   document.getElementById("quiz").style.display = "flex"
-// };
 
 // VARIABLE TO HOLD USER SELECTED ANSWERS
 let selectedResults = "";
@@ -151,18 +144,21 @@ function nextQuestion(event){
 
 // RESTART BUTTON FUNCTION
 function restartQuiz(){
-  // RESETS QUESTION AND RESULTS VARIABLES
-  currentQuestion = 0;
-  selectedResults = "";
-  // HIDES THE RESULTS PANEL AND SHOWS THE QUIZ PANEL
-  document.getElementById("results").style.display = "none";
-  document.getElementById("quiz").style.display = "none";
-  document.getElementById("welcome").style.display = "flex"
-  // CLEARS THE RESULTS PANEL CONTENT
-  skateTitle.innerHTML = "";
-  skateInfo.innerHTML = "";
-  skateImage.style.backgroundImage = "";
-  // CALLS BEGINQUIZ FUNCTION TO START THE QUESTIONAIRE AGAIN
-  beginQuiz();
+  // // RESETS QUESTION AND RESULTS VARIABLES
+  // currentQuestion = 0;
+  // selectedResults = "";
+  // // CLEAR USERNAME
+  // username = "";
+  location.reload(true);
+  // // HIDES THE RESULTS PANEL AND SHOWS THE QUIZ PANEL
+  // document.getElementById("results").style.display = "none";
+  // document.getElementById("quiz").style.display = "none";
+  // document.getElementById("welcome").style.display = "flex"
+  // // CLEARS THE RESULTS PANEL CONTENT
+  // skateTitle.innerHTML = "";
+  // skateInfo.innerHTML = "";
+  // skateImage.style.backgroundImage = "";
+  // // CALLS BEGINQUIZ FUNCTION TO START THE QUESTIONAIRE AGAIN
+  // beginQuiz();
 };
 
