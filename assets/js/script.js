@@ -1,8 +1,8 @@
 // OBJECT VARIABLE HOLDING SKATE RECOMENDATION INFORMATION FOR REFERENCE (Mentor recommendation)
 const skateSuggest = [
   // NARROW STUNT SKATE OPTIONS
-  {id: "AAA", option: {name: "Roces M12 UFS Black", info: `Thank you for completing the quiz ${username} 'Narrow,' 'Stunt,' and 'up to £200,' we'd recommend The Roces M12. It's a classic industry-standard skate that withstands the test of time. The boot is supportive and reliable, built to endure heavy impacts. They hold up against the most demanding street tests performed by some of the most talented skaters worldwide.`, image: "url('assets/images/rocesm12.jpg')"}},
-  {id: "AAB", option: {name: "USD Sway Sagona Pro", info: "The USD Sway with it's unique injection moulding makes the boot impact ready offering great resilience and shock absorption. The Sway offers generous forward flexion with it's ergonomical shape and tapered back for a balance between soul space and bulk.", image: "url('assets/images/usdsway.jpg')"}},
+  {id: "AAA", option: {name: "Roces M12 UFS Black", info: " 'Narrow', 'Stunt', and 'up to £200', we would recommend the Roces M12. It's a classic industry-standard skate that withstands the test of time. The boot is supportive and reliable, built to endure heavy impacts. They hold up against the most demanding street tests performed by some of the most talented skaters worldwide.", image: "url('assets/images/rocesm12.jpg')"}},
+  {id: "AAB", option: {name: "USD Sway Sagona Pro", info: " 'Narrow', 'Stunt', and '£200-£250', we'd recommend the USD Sway. With it's unique injection moulding makes the boot impact ready offering great resilience and shock absorption. The Sway offers generous forward flexion with it's ergonomical shape and tapered back for a balance between soul space and bulk.", image: "url('assets/images/usdsway.jpg')"}},
   {id: "AAC", option: {name: "Razors Shima 3 White", info: "The Razors Shima 3 skates provide the ultimate package of performance, power and style. Built with OG Brian Shima's legendary touch, these skates feature a solid boot with a soft top quick lace system for maximum comfort and unparalleled performance.", image: "url('assets/images/shima3.jpg')"}},
   // NARROW URBAN SKATE OPTIONS
   {id: "ABA", option: {name: "Powerslide Next 100", info: "The shell and cuff are composed of glass fibre-reinforced plastic, making the skate lightweight but supportive. The construction also provides adequate shock absorption so that users will suffer less stress on their feet, reducing muscle fatigue.", image: "url('assets/images/powerslidenext100.jpg')"}},
@@ -69,7 +69,7 @@ const welcomePanel = document.getElementById('welcome');
 const resultsPanel = document.getElementById('results');
 const quizPanel = document.getElementById('quiz');
 
-// DISPLAYS QUIZ AND HIDES RESULTS PANELS AS DEFAULT BEHAVIOUR
+// DISPLAYS WELCOME AND HIDES QUIZ AND RESULTS PANELS AS DEFAULT BEHAVIOUR
 welcomePanel.style.display = "flex";
 quizPanel.style.display = "none";
 resultsPanel.style.display = "none";
@@ -82,10 +82,18 @@ answerBtnC.addEventListener('click', nextQuestion);
 restartBtn.addEventListener('click', restartQuiz);
 submit.addEventListener('click', checkUser);
 
+// VARIABLE TO HOLD USER SELECTED ANSWERS
+let selectedResults = "";
+
+// VARIABLE TO TRACK CURRENT QUESTION
+let currentQuestion = 0;
+
+let username = "";
+
 // CHECKS USER NAME INPUT IS ALPHANUMERICAL STORES USERNAME AND LOADS QUIZ, IF NO USERNAME IS INPUT ALERTS USER TO ENTER ONE
 function checkUser() {
   let regexp = /^[0-9a-zA-z]+$/;
-  let username = nameInput.value.trim();
+  username = nameInput.value.trim();
 
   if (username.match(regexp)) {
     nameInput.innertext = username;
@@ -97,12 +105,6 @@ function checkUser() {
     alert("Please enter a name to continue!")
   };
 };
-
-// VARIABLE TO HOLD USER SELECTED ANSWERS
-let selectedResults = "";
-
-// VARIABLE TO TRACK CURRENT QUESTION
-let currentQuestion = 0;
 
 // FUNCTION TO BEGIN THE QUESTIONAIRE
 function beginQuiz(){
@@ -123,7 +125,8 @@ function skateResult(selectedResults) {
   let result = skateSuggest.find(item => item.id === selectedResults);
   // POPULATE RESULTS PANEL HTML WITH RELEVENT INFORMATION FROM SKATE SUGGEST VARIABLE
   skateTitle.innerHTML = result.option.name;
-  skateInfo.innerHTML = result.option.info;
+  // POPULATES USERNAME WITH FORCED UPPERCASE FROM USERNAME VARIABLE WITH STRING FROM RESULTS.OPTION.INFO
+  skateInfo.innerHTML = "Thank you for completing the quiz " + username.charAt(0).toUpperCase() + username.slice(1) + "." + "<br>Based on your answer responses of" + result.option.info;
   skateImage.style.backgroundImage = result.option.image;
 };
 

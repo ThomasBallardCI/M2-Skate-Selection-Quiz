@@ -43,6 +43,16 @@ submit button - https://www.w3schools.com/tags/att_input_type_submit.asp
 
 text area for input field styling - https://www.w3schools.com/css/css_form.asp
 
+username to uppercase first letter - https://flexiple.com/javascript/javascript-capitalize-first-letter/
+
+inserting user into results innerHTML - https://www.shecodes.io/athena/8931-creating-a-string-with-variables-in-javascript
+
+user name alert - https://www.w3schools.com/jsref/met_win_alert.asp
+
+clearing user name input on restart ith cache clear - https://www.educba.com/clear-cache-javascript/
+
+
+
 
 
 273 - characters max skate info 
