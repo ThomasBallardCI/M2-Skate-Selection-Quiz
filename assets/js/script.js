@@ -9,7 +9,7 @@ const skateSuggest = [
   {id: "ABB", option: {name: "Seba Trix 2", info: " 'Narrow, 'Urban', and '£200-£350' we would recommend The Seba Trix 2. The skate is part of the grand tourism series from Seba. Using a plastic injected shell which offers more comfort and shock absorption than its carbon fibre siblings, making this perfect for exploring the city or longer sessions with friends.", image: "url('assets/images/sebatrix2.jpg')"}},
   {id: "ABC", option: {name: "Powerslide HC Evo", info: " 'Narrow', 'Urban', and '£350+' we would recommend The Powerslide HC Evo. The shell is made of reinforced carbon fibre and kevlar and is heat moldable to your foot (use caution when doing this yourself!) with a 5mm heel lift for optimum positioning and manoeuvrability. The cuff offers excellent lateral support.", image: "url('assets/images/powerslidehcevo.jpg')"}},
   // NARROW FITNESS SKATE OPTIONS
-  {id: "ACA", option: {name: "narrow-fitness-upto-200", info: "placeholder", image: "placeholder"}},
+  {id: "ACA", option: {name: "Powerslide Phuzion 90", info: " 'Narrow', 'Fitness', 'up to £200' we would recommend the Powerslide Phuzion 90. The skate is constructed with a glass-fibre reinforced outer shell, much like the Pheme or the Swell skates. This gives your foot balanced support from toe to ankle, including a 'power knit' upper (TPU welded) which provides a snug feel to the fitment.", image: "url('assets/images/powerslidephuzion90.jpg')"}},
   {id: "ACB", option: {name: "narrow-fitness-upto-350", info: "placeholder", image: "placeholder"}},
   {id: "ACC", option: {name: "narrow-fitness-350+", info: "placeholder",image: "placeholder"}},
   // REGULAR STUNT SKATE OPTIONS
@@ -19,7 +19,7 @@ const skateSuggest = [
   // REGULAR URBAN SKATE OPTIONS
   {id: "BBA", option: {name: "Rollerblade Cruiser", info: " 'Regular', 'Urban' and 'up to £200' we would recommend the Rollerblade Cruiser. An urban skate featuring 80mm/85a Urban Profile wheels and SG7 bearings for added control, stability and speed. Ultimate lateral support and sliders, a dual-buckle/lace secure closure system with shock-absorbing padding in the heel.", image: "url('assets/images/rollerbladecruiser.jpg')"}},
   {id: "BBB", option: {name: "Gawds Aton Urban 110mm", info: " 'Regular', 'Urban' and '£200-£350' we would recommend the Gawds Aton Urban 110mm. With a style that screams GAWDS, the Aton is like nothing else on the market. The shell is made of glass-fibre reinforced plastic and covered with a mixture of polyurethane (PU) nano-leather, and real leather, giving the skate a unique sneaker-inspired look.", image: "url('assets/images/gawdsaton110.jpg')"}},
-  {id: "BBC", option: {name: "Regular-urban-350+", info: "placeholder", image: "placeholder"}},
+  {id: "BBC", option: {name: "Adapt Hyperskate GTO", info: " 'Regular', 'Urban' and '£350+' we would recommend the Adapt Hyperskate GTO. The GTO model has remained at the core of Adapt's offering since its debut in 2016, and while it has been continuously updated, its essential nature has remained the same; a speedy, reactive, and aesthetically pleasing skate.", image: "url('assets/images/adapthyperskategto.jpg')"}},
   // REGULAR FITNESS SKATE OPTIONS
   {id: "BCA", option: {name: "Regular-fitness-upto-200", info: "placeholder", image: "placeholder"}},
   {id: "BCB", option: {name: "Regular-fitness-upto-350", info: "placeholder", image: "placeholder"}},
