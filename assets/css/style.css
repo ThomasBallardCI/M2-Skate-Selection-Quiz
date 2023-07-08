@@ -155,13 +155,44 @@ h1, h2 {
   overflow: hidden;
 }
 
-/* MOBILE STYLING
-@media only screen and (max-width: 615px) {
-  #quiz, #results {
+/* TABLET STYLING */
+@media (max-width:606px) {
+#quiz, #results, #welcome {
+  max-width: 500px;
+  height: auto;
+}
+.answer-btn, .restart-btn {
+  max-width: 375px;
+}
+#submit {
+  max-width: 375px;
+}
+input[type=text] {
+  max-width: 375px;
+}
+#skateContent {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+}
+
+/* MOBILE STYLING */
+@media (max-width: 376px) {
+  #quiz, #results, #welcome {
     max-width: 300px;
-    height: auto;
   }
-  #skateContent {
-    flex-direction: column;
+  .answer-btn, .restart-btn {
+    max-width: 275px;
   }
-} */
+  #submit {
+    max-width: 275px;
+  }
+  input[type=text] {
+    max-width: 275px;
+  }
+  #skateInfo {
+    font-size: 0.9em;
+    width: 300px;
+  }
+}
