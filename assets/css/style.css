@@ -196,3 +196,19 @@ input[type=text] {
     width: 300px;
   }
 }
+
+/* GALAXY FOLD STYLING */
+@media (max-width: 281px) {
+  #quiz, #results, #welcome {
+    max-width: 250px;
+  }
+  .answer-btn, .restart-btn {
+    max-width: 225px;
+  }
+  #submit {
+    max-width: 225px;
+  }
+  input[type=text] {
+    max-width: 225px;
+  }
+}
