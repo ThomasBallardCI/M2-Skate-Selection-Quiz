@@ -55,7 +55,7 @@ The design was created as desktop first with a mindset for ease of conversion to
 
 Starting out with a basic wireframe layout design created in AdobeXD I then researched "Glassmorphism" to create the background art style to be similar to the effect of the Apple TV App.
 
-I then found and picked the "Manrope font". This font again is similar to the Apple font and is clean clear and modern to match the overall asethetic of the site.
+"Manrope font". This font is similar to the Apple font and is clean clear and modern to match the overall asethetic of the site.
 
 
 ### Wireframes
