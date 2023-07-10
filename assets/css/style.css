@@ -121,7 +121,6 @@ h1, h2 {
 #quiz, #results, #welcome {
   display: flex;
   flex-direction: column;
-  /* border: #ffffff solid 1px; */
   max-width: 616px;
   height: 450px;
   justify-content: center;

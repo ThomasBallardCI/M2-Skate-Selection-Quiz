@@ -49,4 +49,15 @@ Since the Covid-19 Pandemic Inline skating has seen a boom of new and returning 
 
 ## Early Design Phases
 
+The design was created as desktop first with a mindset for ease of conversion to mobile and tablet devices. 
 
+[The inspiration from Apple TV app's  "Logout" screen](assets/images/readme/appletvlogout.jpg) utilising a clean and clear aesthetic to minimise clutter on the page and help the user focus on the questionaire itself.
+
+Starting out with a basic wireframe layout design created in AdobeXD I then researched "Glassmorphism" to create the background art style to be similar to the effect of the Apple TV App.
+
+I then found and picked the "Manrope font". This font again is similar to the Apple font and is clean clear and modern to match the overall asethetic of the site.
+
+
+### Wireframes
+
+#### Questionaire 
