@@ -54,6 +54,7 @@ Starting out with a basic wireframe layout design created in AdobeXD I then rese
 
 ### Colour Scheme
 The neutral colour scheme of whites, blacks and greys was chosen to help with visual clarity whilst maintaining a clean and modern aesthetic.
+!["Colour Scheme" image](documentation/supp-images/colourscheme.png)
 
 ### Typography
 "Manrope font". This font is similar to the Apple font and is clean clear and modern to match the overall asethetic of the site.

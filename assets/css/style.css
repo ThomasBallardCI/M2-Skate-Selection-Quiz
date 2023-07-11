@@ -35,7 +35,7 @@ p {
 
 input[type=text] {
   border-radius: 12px;
-  background-color: rgba(254, 253, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   height: 66px;
   width: 500px;
   text-align: center;
@@ -58,7 +58,7 @@ input[type=text]::placeholder {
 }
 
 input[type=text]:focus::placeholder {
-  color: rgba(133,126,120,255);
+  color: rgba(133, 126, 120, 1.0);
 }
 
 /* START QUIZ BUTTON STYLING */
@@ -105,7 +105,7 @@ h1, h2 {
 
 .answer-btn:hover, .restart-btn:hover {
   transform: scale(1.06);
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 1.0);
   color: #000000;
   cursor: pointer;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
