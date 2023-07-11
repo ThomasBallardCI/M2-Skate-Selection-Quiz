@@ -103,6 +103,7 @@ function checkUser() {
     console.log(username);
   } else {
     alert("Please enter a name to continue!")
+    nameInput.value = "";
   };
 };
 
