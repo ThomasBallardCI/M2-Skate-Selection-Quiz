@@ -2,7 +2,7 @@
 
 This questionaire was designed to help users find an inline skate by answering three short questions and has been designed with a range of screen sizes in mind.
 
-!["Am I Responsive" image](assets/images/readme/amiresponsive.png)
+!["Am I Responsive" image](documentation/supp-images/amiresponsive.jpg)
 
 [View the Live project here](https://thomasballardci.github.io/M2-Skate-Selection-Quiz/)
 
@@ -10,7 +10,6 @@ This questionaire was designed to help users find an inline skate by answering t
 1. [User Experience](#user-experience)
 2. [Design](#design)
 3. [Features](#features)
-4. [Accessibility](#accessibility)
 5. [Technologies Used](#technologies-used)
 6. [Deployment and Local Development](#deployment-&-local-development)
 7. [Testing](#testing)
@@ -49,13 +48,43 @@ Since the Covid-19 Pandemic Inline skating has seen a boom of new and returning 
 
 The design was created as desktop first with a mindset for ease of conversion to mobile and tablet devices. 
 
-[The inspiration from Apple TV app's  "Logout" screen](assets/images/readme/appletvlogout.jpg) utilising a clean and clear aesthetic to minimise clutter on the page and help the user focus on the questionaire itself.
+[The inspiration from Apple TV app's  "Logout" screen](documentation/supp-images/appletvlogout.jpg) utilising a clean and clear aesthetic to minimise clutter on the page and help the user focus on the questionaire itself.
 
 Starting out with a basic wireframe layout design created in AdobeXD I then researched "Glassmorphism" to create the background art style to be similar to the effect of the Apple TV App.
 
+### Colour Scheme
+The neutral colour scheme of whites, blacks and greys was chosen to help with visual clarity whilst maintaining a clean and modern aesthetic.
+
+### Typography
 "Manrope font". This font is similar to the Apple font and is clean clear and modern to match the overall asethetic of the site.
 
+### Background Image
+The background image was generated using Adobe FireFly AI generation tool. Promting it to generate a concrete skatepark with blue cloudy sky, trees in background and grass in the forground. This was chosen to create a light and bright feel for the glassmorphism effect whilst maintaining the theme of inline skating.
+!["Background Image" image](documentation/supp-images//background.jpg)
 
 ### Wireframes
 
 #### Questionaire 
+!["Questionaire Wireframe" image](documentation/wireframes/questionairewireframe.jpg)
+
+#### Results
+!["Results Wireframe" image](documentation/wireframes/resultswireframe.jpg)
+
+#### Welcome
+!["Welcome Wireframe" image](documentation/wireframes/welcomewireframe.jpg)
+
+### Finalised Design
+
+Working on the main questionaire itself first from a design perspective allowed me to more easily transition the design philosphy over to the results and welcome pages.
+
+#### Questionaire
+!["Final Questionaire" image](documentation/supp-images/finalquestionaire.jpg)
+
+#### Results
+!["Final Results" image](documentation/supp-images/finalresults.jpg)
+
+#### Welcome
+!["Final Welcome" image](documentation/supp-images/finalwelcome.jpg)
+
+
+

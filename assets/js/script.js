@@ -46,7 +46,7 @@ function checkUser() {
     quizPanel.style.display = "flex";
     console.log(username);
   } else {
-    alert("Please enter a name to continue!")
+    alert("Please Enter a Valid Username. Alphanumeric Characters Only: Min 2 - Max 30")
     nameInput.value = "";
   };
 };
