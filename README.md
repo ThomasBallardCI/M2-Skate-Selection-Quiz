@@ -28,7 +28,7 @@ Since the Covid-19 Pandemic Inline skating has seen a boom of new and returning 
 * The questionaire itself
 * Inline Skate Recomendation
 
-## User Stories
+### User Stories
 
 #### Client Goals
 
@@ -46,8 +46,6 @@ Since the Covid-19 Pandemic Inline skating has seen a boom of new and returning 
 * To be able to take the questionaire again if users Inline Skate needs change
 
 ## Design
-
-## Early Design Phases
 
 The design was created as desktop first with a mindset for ease of conversion to mobile and tablet devices. 
 

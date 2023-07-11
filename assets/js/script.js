@@ -152,21 +152,6 @@ function nextQuestion(event){
 
 // RESTART BUTTON FUNCTION
 function restartQuiz(){
-  // // RESETS QUESTION AND RESULTS VARIABLES
-  // currentQuestion = 0;
-  // selectedResults = "";
-  // // CLEAR USERNAME
-  // username = "";
   location.reload(true);
-  // // HIDES THE RESULTS PANEL AND SHOWS THE QUIZ PANEL
-  // document.getElementById("results").style.display = "none";
-  // document.getElementById("quiz").style.display = "none";
-  // document.getElementById("welcome").style.display = "flex"
-  // // CLEARS THE RESULTS PANEL CONTENT
-  // skateTitle.innerHTML = "";
-  // skateInfo.innerHTML = "";
-  // skateImage.style.backgroundImage = "";
-  // // CALLS BEGINQUIZ FUNCTION TO START THE QUESTIONAIRE AGAIN
-  // beginQuiz();
 };
 
