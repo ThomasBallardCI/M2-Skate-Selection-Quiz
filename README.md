@@ -146,9 +146,25 @@ Working on the main questionaire itself first from a design perspective allowed 
   - __Result for Index.html (Whole site HTML)__
 
     Two Warnings appear for the h1 and h2 headings this is the result of those headings being populated by JS rather than HTML directly.
-    ![HTML Results Index](documentation/validation-results/htmlvalidation.jpg)
+    ![HTML Results index.html](documentation/validation-results/htmlvalidation.jpg)
 
-#### [CSS Validator]()
+#### [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+  - __Results for Style.css__
+
+    ![CSS Results style.css](documentation/validation-results/cssvalidation.jpg)
+
+#### [Lighthouse Validaton](https://developer.chrome.com/docs/lighthouse/overview/)
+  
+  - __Desktop__
+
+    ![Desktop Lighthouse](documentation/validation-results/desktoplighthouse.jpg)
+
+  - __Mobile__
+
+    ![Mobile Lighthouse](documentation/validation-results/mobilelighthouse.jpg)
+
+
 
 
 
