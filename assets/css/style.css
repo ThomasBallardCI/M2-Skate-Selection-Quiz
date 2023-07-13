@@ -68,7 +68,6 @@ input[type=text]:focus::placeholder {
   border-radius: 12px;
   font-size: 2em;
   margin-top: 10px;
-  font-weight: medium;
 }
 
 #submit:hover {
@@ -87,7 +86,6 @@ h1, h2 {
   margin-bottom: 1.5625rem;
   font-size: 2.375em;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: medium;
 }
 
 /* QUIZ BUTTONS STYLING */
@@ -98,7 +96,6 @@ h1, h2 {
   border-radius: 12px;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  font-weight: medium;
   font-size: 2em;
   margin-top: 10px;
 }
