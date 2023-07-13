@@ -232,7 +232,7 @@ const skateSuggest = [
     info: " 'Wide', 'Fitness' and '£350+' we would recommend the Adapt Hyperskate GTO. The GTO model has remained at the core of Adapt's offering since its debut in 2016, and while it has been continuously updated, its essential nature has remained the same; a speedy, reactive, and aesthetically pleasing skate.",
     image: "url('assets/images/adapthyperskategto.webp')"
   }
-},
+}
 ];
 
 // ARRAY OF QUESTIONS WITH ANSWER ID'S TO LOG IN "SELECTED RESULTS ARRAY"
@@ -248,5 +248,5 @@ const questions = [
   {
     question: "What price range do you typically find most suitable for your needs?",
     answers: ["Upto £200", "£200-£350", "Over £350"]
-  },
+  }
 ];
