@@ -140,7 +140,10 @@ Working on the main questionaire itself first from a design perspective allowed 
 ## Testing
 
 Testing was ongoing process as I built out the Questionaire utilising Chrome developer tools with console logging to ensure I was getting the responses required from the code as is was written.
-There is two types of testing methods available "Manual" and "Automated"
+There is two types of testing methods available "Manual" and "Automated" both have been used in some form throughout the creating of the website questionaire.
+- __Manual Testing__ is done by a individual to see if they can use the product in a way that creates, finds and results in bugs or not to ensure it behaves correctly for the user when pushed live.
+
+- __Automated Testing__ is done by means of an automation framework or another tool or software suite to check for errors and bugs in code.
 
 ### Validator Testing
 
@@ -178,5 +181,10 @@ There is two types of testing methods available "Manual" and "Automated"
     I added "document, alert, location" to the imported globals field due to them being being provided by the browswer enviroment, I also added "question and skateSuggest" as they are in the data.js file. I told it to allow white space for preference on how the code looks for readability as well as long due to comment being longer than 80 characters.
     ![JSLint script.js](documentation/validation-results/jslintscript.jpg)
 
+### Manual Testing
 
+All manual testing was carried out by myself and a few friends on various devices and browsers these include.
 
+__Desktop__
+- Chrome Version 114.0.5735.199 (Official Build) (64-bit)
+- Firefox 
