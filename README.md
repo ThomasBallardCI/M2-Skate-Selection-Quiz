@@ -139,6 +139,9 @@ Working on the main questionaire itself first from a design perspective allowed 
 
 ## Testing
 
+Testing was ongoing process as I built out the Questionaire utilising Chrome developer tools with console logging to ensure I was getting the responses required from the code as is was written.
+There is two types of testing methods available "Manual" and "Automated"
+
 ### Validator Testing
 
 #### [HTML Validator](https://validator.w3.org/)
@@ -175,5 +178,5 @@ Working on the main questionaire itself first from a design perspective allowed 
     I added "document, alert, location" to the imported globals field due to them being being provided by the browswer enviroment, I also added "question and skateSuggest" as they are in the data.js file. I told it to allow white space for preference on how the code looks for readability as well as long due to comment being longer than 80 characters.
     ![JSLint script.js](documentation/validation-results/jslintscript.jpg)
 
-    
+
 
