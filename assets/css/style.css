@@ -23,7 +23,6 @@ body{
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
 }
 
 /* WELCOME PAGE STYLING */
@@ -50,7 +49,6 @@ input[type=text]:focus {
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
-  -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
 }
 
 input[type=text]::placeholder {
@@ -73,7 +71,6 @@ input[type=text]:focus::placeholder {
 #submit:hover {
   transform: scale(1.06);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
-  -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
 }
 
 #submit:active {
