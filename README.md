@@ -164,8 +164,13 @@ Working on the main questionaire itself first from a design perspective allowed 
 
     ![Mobile Lighthouse](documentation/validation-results/mobilelighthouse.jpg)
 
+#### [JSLint](https://jslint.com)
+
+  - __Data.js__
+    The two warnings have been rectified.
+    ![JSLint data.js](documentation/validation-results/jslintdata.jpg)
 
 
-
-
+  - __Sctipt.js__
+    I added "document, alert, location" to the imported globals field due to them being and told it to allow white space for preference on how the code looks for readability
 
