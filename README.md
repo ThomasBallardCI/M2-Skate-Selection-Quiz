@@ -172,5 +172,8 @@ Working on the main questionaire itself first from a design perspective allowed 
 
 
   - __Sctipt.js__
-    I added "document, alert, location" to the imported globals field due to them being and told it to allow white space for preference on how the code looks for readability
+    I added "document, alert, location" to the imported globals field due to them being being provided by the browswer enviroment, I also added "question and skateSuggest" as they are in the data.js file. I told it to allow white space for preference on how the code looks for readability as well as long due to comment being longer than 80 characters.
+    ![JSLint script.js](documentation/validation-results/jslintscript.jpg)
+
+    
 
