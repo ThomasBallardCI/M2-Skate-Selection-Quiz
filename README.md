@@ -134,7 +134,14 @@ Working on the main questionaire itself first from a design perspective allowed 
 - [Favicon.io](https://favicon.io/) Was used to generate a favicon for the site and placed into the head of index.html.
 - [VS Code](https://code.visualstudio.com/) Was used to write the website code
 - [GitHub:](https://www.github.com/) is used as the repository for the project's code after being pushed from Gitpod.
+- [Adobe XD](https://www.adobe.com/creativecloud.html) was used to create the wireframes during the design process.
+- [Adobe Photoshop](https://www.adobe.com/creativecloud.html) was used to create the background image and resize images of the skates.
 
+## Testing
+
+### Validator Testing
+
+- [HTML Validator](https://validator.w3.org/)
 
 
 
