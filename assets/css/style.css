@@ -103,7 +103,6 @@ h1, h2 {
   color: #000000;
   cursor: pointer;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
-  -webkit-filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
 }
 
 .answer-btn:active {
