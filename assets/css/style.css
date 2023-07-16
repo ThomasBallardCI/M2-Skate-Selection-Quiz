@@ -13,20 +13,6 @@ body{
   color: #ffffff;
 }
 
-@media (pointer: fine) {
-  #submit:hover {
-    transform: scale(1.06);
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
-  }
-  .answer-btn:hover, .restart-btn:hover {
-    transform: scale(1.06);
-    background-color: rgba(255, 255, 255, 1.0);
-    color: #000000;
-    cursor: pointer;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
-  }
-}
-
 /* MAIN BACKGROUND STYLING */
 .container {
   display: flex;
@@ -161,6 +147,20 @@ h1, h2 {
   overflow: hidden;
 }
 
+/* MEDIA QUERY TO ONLY ALOW HOVER EFFECTS ON DESKTOP */
+@media (pointer: fine) {
+  #submit:hover {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+  }
+  .answer-btn:hover, .restart-btn:hover {
+    transform: scale(1.06);
+    background-color: rgba(255, 255, 255, 1.0);
+    color: #000000;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+  }
+}
 
 /* TABLET STYLING */
 @media (max-width:606px) {
