@@ -292,6 +292,6 @@ __Tablet__
 
 Massive thanks to my tutor, Elaine Roche, for helping with suggestions for the code for the next question function to work correctly and checking user input is alphanumeric, as well as all the other support and brainstorming on ideas.
 
-Massive thanks to my September 2022 Cohort group for helping with testing and peer reviewing my code
+Massive thanks to my September 2022 Cohort group for helping with testing and peer reviewing my code.
 
 
