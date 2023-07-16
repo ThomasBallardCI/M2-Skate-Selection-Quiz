@@ -152,6 +152,7 @@ h1, h2 {
   #submit:hover {
     transform: scale(1.06);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+    cursor: pointer;
   }
   .answer-btn:hover, .restart-btn:hover {
     transform: scale(1.06);
