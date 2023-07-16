@@ -137,6 +137,40 @@ Working on the main questionaire itself first from a design perspective allowed 
 - [Adobe XD](https://www.adobe.com/creativecloud.html) was used to create the wireframes during the design process.
 - [Adobe Photoshop](https://www.adobe.com/creativecloud.html) was used to create the background image and resize images of the skates.
 
+## Deployment & Local Development
+
+### Deployment
+
+This project was deployed to GitHub Pages using the following steps:
+
+1. Log into GitHub and locate the [GitHub Repository](https://github.com/ThomasBallardCI/M2-Skate-Selection-Quiz).
+2. Click the settings button (above the "add file" button).
+3. Click on "Pages" on the left-hand-side column.
+4. Under "Source", click the dropdown called "Main", select folder ""/root" and click "save".
+5. Refresh the page.
+6. Click on the "Visit site" button at the top of the page.
+
+### Local Deployment
+
+#### How to Fork
+
+To fork the Brain Worms repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, at [GitHub Repository](https://github.com/ThomasBallardCI/M2-Skate-Selection-Quiz).
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the Brain Worms repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, at [GitHub Repository](https://github.com/ThomasBallardCI/M2-Skate-Selection-Quiz).
+3. Above the list of files, click "Code".
+4. Click "Open with GitHub Desktop" to clone and open the repository with GitHub Desktop.
+5. Click "Choose..." and, using Windows Explorer, navigate to a local path where you want to clone the repository.
+6. Click "Clone".
+
 ## Testing
 
 Testing was ongoing process as I built out the Questionaire utilising Chrome developer tools with console logging to ensure I was getting the responses required from the code as is was written.
@@ -187,4 +221,14 @@ All manual testing was carried out by myself and a few friends on various device
 
 __Desktop__
 - Chrome Version 114.0.5735.199 (Official Build) (64-bit)
-- Firefox 
+- Firefox Version 115.0.2 (64-bit)
+- Microsoft Edge4 Version 114.0.1823.82 (Official Build) (64-bit)
+
+__Mobile__
+- Samsung Galaxy S21+
+- One UI Version 5.1/Android 13
+- Chrome Version 114.0.5735.196
+
+__Tablet__
+- Apple Ipad Pro 13" 2021 - iPadOS Version 16.5.1
+- Safari Version 

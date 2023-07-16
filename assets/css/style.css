@@ -23,6 +23,7 @@ body{
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px)
 }
 
 /* WELCOME PAGE STYLING */

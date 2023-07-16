@@ -51,7 +51,7 @@ user name alert - https://www.w3schools.com/jsref/met_win_alert.asp
 
 clearing user name input on restart ith cache clear - https://www.educba.com/clear-cache-javascript/
 
-
+aded webkit for background blur safari
 
 
 
