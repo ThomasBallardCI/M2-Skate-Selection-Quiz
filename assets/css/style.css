@@ -13,6 +13,20 @@ body{
   color: #ffffff;
 }
 
+@media (pointer: fine) {
+  #submit:hover {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+  }
+  .answer-btn:hover, .restart-btn:hover {
+    transform: scale(1.06);
+    background-color: rgba(255, 255, 255, 1.0);
+    color: #000000;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
+  }
+}
+
 /* MAIN BACKGROUND STYLING */
 .container {
   display: flex;
@@ -69,10 +83,10 @@ input[type=text]:focus::placeholder {
   margin-top: 10px;
 }
 
-#submit:hover {
+/* #submit:hover {
   transform: scale(1.06);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
-}
+} */
 
 #submit:active {
   transform: scale(1.0)
@@ -98,13 +112,13 @@ h1, h2 {
   margin-top: 10px;
 }
 
-.answer-btn:hover, .restart-btn:hover {
+/* .answer-btn:hover, .restart-btn:hover {
   transform: scale(1.06);
   background-color: rgba(255, 255, 255, 1.0);
   color: #000000;
   cursor: pointer;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.4));
-}
+} */
 
 .answer-btn:active {
   transform: scale(1.0)
@@ -146,6 +160,7 @@ h1, h2 {
   width: 375px;
   overflow: hidden;
 }
+
 
 /* TABLET STYLING */
 @media (max-width:606px) {

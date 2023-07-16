@@ -231,4 +231,6 @@ __Mobile__
 
 __Tablet__
 - Apple Ipad Pro 13" 2021 - iPadOS Version 16.5.1
-- Safari Version 
+- Safari Version 16.0
+
+
