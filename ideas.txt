@@ -53,6 +53,8 @@ clearing user name input on restart ith cache clear - https://www.educba.com/cle
 
 aded webkit for background blur safari
 
+fox for hover https://stackoverflow.com/questions/73967974/disable-css-hover-when-touch-end-in-touch-device
+
 
 
 273 - characters max skate info 

@@ -179,6 +179,21 @@ There is two types of testing methods available "Manual" and "Automated" both ha
 
 - __Automated Testing__ is done by means of an automation framework or another tool or software suite to check for errors and bugs in code.
 
+### Solved Bugs
+
+- Hover effect was persistant across mobile and tablet devices and remained on the previously selected option during the questionaire.
+  - Fix: Used a media query (Pointer: fine) with the hover styling placed in to only target devices with an accurate pointe (like a mouse or sytlus).
+
+- Name Input field was allow non alphanumeric values.
+  - Fix: Added Code to JS to check what the user inputs into the name field is only Alphanumeric characters and if not alerts user to provide a name containing them.
+
+- Backgroun blur was not applying on iPad OS/Safari brower.
+  - Fix: Added a -webkit- CSS line to target safari specifically to apply the blur.
+
+### Known Bugs
+
+- Firefox is not displaying the "Manrope" font correctly and defaulting to sans-seriff. Unsure of the reasoning and due to time contraints could not find and implement a fix in time for submission.
+
 ### Validator Testing
 
 #### [HTML Validator](https://validator.w3.org/)
@@ -232,5 +247,47 @@ __Mobile__
 __Tablet__
 - Apple Ipad Pro 13" 2021 - iPadOS Version 16.5.1
 - Safari Version 16.0
+
+### Test Cases and Results
+  - Chrome Developer tools were used to fully test the site and it's functionality throughout the development process in combination with consolelogs as code was written to ensure it was functioning correctly. The Chrome Developer tools were used to also test responsivness for Mobile and table device specific styling before moving on to functionality testing on those devices phsyically.
+
+#### Button
+  - Testing of all buttons was carried out on all platforms to ensure they took you to the relevant next section, Check and Logged the information required correctly or restarted the quiz entirely, With the questionaire buttons being check in all 27 possible combinations.
+
+#### Input Field
+  - Testing of the input field was done by passing it non alphumerical values in various stages of the "Names" characters when input to ensure the code would fire and send the alert to user to notify them only alphanumerical characters are permitted.
+  - Testing of the Name being logged for use when the begin quiz button was pressed and the user had used only alphanumerical characters between 2 and 30 characters long was done via the chrome dev tools and console logging the value pushed to the username variable.
+
+## Credits
+
+- [Locoskates.co.uk](https://Locoskates.co.uk) For the resized marketing images of the Inline Skates used.
+
+- [Caniuse.com](https://caniuse.com/css-backdrop-filter) For CSS Backdrop filter compatibility with Safari.
+
+- [StackOverFlow](https://stackoverflow.com/questions/73967974/disable-css-hover-when-touch-end-in-touch-device) For the help with blocking the hover effects on mobile and tablet devices.
+
+- [StackOverFlow](https://stackoverflow.com/questions/13183421/how-to-change-placeholder-color-on-focus) Help with changing placeholder font colour for inputfield.
+
+- [Geeksforgeeks](https://www.geeksforgeeks.org/what-is-mouse-down-selector-in-css/) For help with creating a "pressed in" effect on button press for desktop.
+
+- [Plainenglish.io](https://javascript.plainenglish.io/how-to-get-the-id-of-the-clicked-element-in-the-javascript-click-handler-8ca398d848d6) For help with initially getting the iD of the question button selected by user logged.
+
+- [W3Schools]( https://www.w3schools.com/css/css3_flexbox.asp) For help with Flexbox. 
+
+- [W3Schools](https://www.w3schools.com/tags/att_input_type_submit.asp) Help with Submit button.
+
+- [W3Schools](https://www.w3schools.com/css/css_form.asp) Help with Text area styling for user name input field 
+
+- [W3Schools](https://www.w3schools.com/jsref/met_win_alert.asp) Help with alerting user to incorrect name input.
+
+- [Flexiple.com](https://flexiple.com/javascript/javascript-capitalize-first-letter/) For help with forcing user input to be Upper case on first letter regardless of users input when called on results page.
+
+- [Shecodes.io](https://www.shecodes.io/athena/8931-creating-a-string-with-variables-in-javascript) Help with stringing together username and results information on results page.
+
+- [educba](https://www.educba.com/clear-cache-javascript/) Help with clearing the username and stored results on restart with cache clear.
+
+Massive thanks to my tutor Elaine Roche for helping with suggestions to the code for the next question function to work correctly and checking user input is alphanumerical as well as all the other support and brainstorming on ideas.
+
+Massive thanks to my Sept 2022 Cohort group for helping with testing and peer reviewing my code.
 
 
