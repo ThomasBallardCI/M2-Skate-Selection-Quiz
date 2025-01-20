@@ -1,4 +1,4 @@
-# Inline Skate Picker clone
+# Inline Skate Picker
 
 This questionnaire was designed to help users find an inline skate by answering three short questions and has been designed with a range of screen sizes in mind.
 
